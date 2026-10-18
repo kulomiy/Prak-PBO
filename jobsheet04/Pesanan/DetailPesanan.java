@@ -2,7 +2,7 @@ package jobsheet04.Pesanan;
 
 public class DetailPesanan {
     private String idDetail;
-    private Produk produk;
+    private Produk produk; 
     private int jumlah;
     private double subTotal;
 
@@ -13,16 +13,16 @@ public class DetailPesanan {
         this.subTotal = 0;
     }
 
-    public String getDetail() {
+    public String getDetail() { 
         return idDetail;
     }
 
     public double hitungSubTotal() {
-        subTotal = produk.getHarga() * jumlah;
+        subTotal = produk.getHarga() * jumlah; //subtotal = harga produk × jumlah
         return subTotal;
     }
 
-    public void kurangiStok() {
+    public void kurangiStok() { 
         produk.ubahStok(-jumlah);
     }
 

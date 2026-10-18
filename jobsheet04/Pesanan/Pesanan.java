@@ -1,6 +1,6 @@
 package jobsheet04.Pesanan;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 
 
 public class Pesanan {
     private String idPesanan;
@@ -11,20 +11,20 @@ public class Pesanan {
     public Pesanan(String idPesanan, String namaPelanggan) {
         this.idPesanan = idPesanan;
         this.namaPelanggan = namaPelanggan;
-        this.daftarDetailPesanan = new ArrayList<>();
+        this.daftarDetailPesanan = new ArrayList<>(); 
         this.totalHarga = 0;
     }
 
     public void tambahDetailPesanan(DetailPesanan detailPesanan) {
-        daftarDetailPesanan.add(detailPesanan);
+        daftarDetailPesanan.add(detailPesanan); 
 
-        detailPesanan.kurangiStok();
+        detailPesanan.kurangiStok(); 
     }
 
     public double hitungTotal() {
         totalHarga = 0;
 
-        for (DetailPesanan detail : daftarDetailPesanan) {
+        for (DetailPesanan detail : daftarDetailPesanan) { 
             totalHarga += detail.hitungSubTotal();
         }
 
@@ -38,7 +38,7 @@ public class Pesanan {
         System.out.println("Nama Pelanggan : " + namaPelanggan);
         System.out.println("\nDetail Pesanan");
 
-        for (DetailPesanan detail : daftarDetailPesanan) {
+        for (DetailPesanan detail : daftarDetailPesanan) { 
             detail.tampilkanDetail();
             System.out.println();
         }

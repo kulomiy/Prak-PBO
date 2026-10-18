@@ -7,6 +7,9 @@ public class PesananDemo {
         Produk produk2 = new Produk("P002", "Tiramisu", 50000, 8);
         Produk produk3 = new Produk("P003", "Croissant", 25000, 15);
 
+        produk1.setNamaProduk("roti cokelat");
+        System.out.println(produk1.getNamaProduk());
+
         DetailPesanan detail1 = new DetailPesanan("D001", produk1, 2);
         DetailPesanan detail2 = new DetailPesanan("D002", produk2, 1);
         DetailPesanan detail3 = new DetailPesanan("D003", produk3, 3);

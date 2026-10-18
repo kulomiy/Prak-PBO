@@ -21,6 +21,11 @@ public class Produk {
         return namaProduk;
     }
 
+    public void setNamaProduk(String namaProduk) {
+        this.namaProduk = namaProduk;
+    }
+        
+
     public double getHarga() {
         return harga;
     }

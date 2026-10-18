@@ -5,8 +5,8 @@ public class Pegawai {
     private String nama;
 
     public Pegawai(String nip, String nama) {
-        this.nip = nip;
-        this.nama = nama;
+        this.nip = nip; //atribut milik object
+        this.nama = nama; //parameter constructor. Jadi nilainya dipindahkan dari parameter ke atribut objek
     }
 
     public String getNIP() {
