@@ -1,0 +1,30 @@
+package jobsheet10;
+
+public class Dosen extends Pegawai implements Comparable<Dosen> {
+    public String nidn;
+
+    public Dosen() {
+    }
+
+    public Dosen(String nidn, String nip, String nama) {
+        super(nip, nama);
+        this.nidn = nidn;
+    }
+
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("NIDN : " + nidn);
+    }
+
+    public void mengajar() {
+        System.out.println("Membuat rencana pembelajaran");
+        System.out.println("Menyusun materi ");
+        System.out.println("Melaksanakan PBM");
+        System.out.println("Melakukan evaluasi");
+    }
+
+    @Override
+    public int compareTo(Dosen other) {
+        return this.nidn.compareTo(other.nidn);
+    }
+}
